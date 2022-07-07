@@ -11,6 +11,7 @@ def fibonacci(num)
   last_two.last
 end
 
+
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 0"
   puts fibonacci(0)

@@ -1,6 +1,19 @@
 def fibonacci(num)
-  # type your code in here
+  fib_array = [0, 1]
+
+  return num if num < 2
+
+  range = (2..num)
+  
+  for n in range
+    sum = fib_array[n - 2] + fib_array[n - 1]
+    fib_array << sum
+  end
+
+  fib_array[num]
 end
+
+
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 0"
